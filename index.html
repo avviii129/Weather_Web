@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Live Weather Report</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="page-index">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="d-flex align-items-center">Weather Forecast</h1>
+      </a>
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <h2 data-aos="fade-up">Live Weather Forecast </h2>
+		  
+         
+		  
+		  <div class="weather" data-aos="fade-up">
+		   <div class="enci"><label for="cityInput" >Enter city name to check weather</label></div>
+  <div><input type="text" id="cityInput" placeholder="Enter city"></div>
+  <button onclick="getWeather()" class="button">Search</button>
+  
+  
+   <blockquote data-aos="fade-up">
+    <div id="weatherResult"><p>
+	<img height="90px" src='https://i.gifer.com/XOsX.gif'></img>
+	<p class="wait">Waiting for your action !</p>
+	</p></div>
+	</blockquote>
+	</div>
+	
+
+  
+             </div>
+		  
+        
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+
+
+
+
+    
+
+   
+
+   
+
+   
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+	
+      <div class="container">
+	  
+        <div class="row gy-4">
+		
+          <div class="col-lg-5 col-md-12 footer-info">
+		  
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>Avneesh Yadav</span>
+            </a>
+            <p></p>
+            <div class="social-links d-flex  mt-3">
+			
+              <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
+              <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
+			  
+              <a href="https://www.instagram.com/wht_avi/?igsh=Y2JsbmJyYW9zNnow" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://in.linkedin.com/in/avneesh-yadav-1072b527b" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact :-</h4>
+            <p class="con">
+              H.No. 2399 New Kanchanpur<br>
+              Adhartal, Jabalpur<br>
+              Madhya Pradesh <br><br>
+              <strong>Phone:</strong> +91 9685185584<br>
+              <strong>Email:</strong> avneeshy313@gmail.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+        
+        <div class="credits">
+          By Avneesh Yadav
+        </div>
+    </div>
+  </footer><!-- End Footer -->
+
+ 
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+ 
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+	<script src="assets/js/weatherapi.js"></script>
+</body>
+
+</html>

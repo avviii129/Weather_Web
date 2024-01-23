@@ -1,0 +1,332 @@
+/* Fonts */
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-default: #2b180d;
+  --color-primary: #56b8e6;
+  --color-secondary: #1b2f45;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #82cbed;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-5 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+	transition:0.2s;
+  z-index: 997;
+  padding: 24px 0;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 12px 0;
+  }
+}
+
+.header.sticked {
+  background: rgba(0, 0, 0, 1);
+  padding: 12px 0;
+  width:100%;
+}
+
+.header .logo h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font-secondary);
+  margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1704741252008-bc9930d84a0a?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") top center;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0;
+  z-index: 3;
+}
+
+@media (min-width: 1034px) {
+  .hero:after {
+    position: absolute;
+    content: "";
+    width: 40%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.hero:before {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  inset: 0;
+}
+
+@media (max-width: 1034px) {
+  .hero:before {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.hero .container {
+  z-index: 1;
+}
+
+@media (min-width: 1365px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 30px;
+  margin-bottom:65px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.hero blockquote {
+  color: #fff;
+  padding-left: 20px;
+  font-size: 18px;
+  font-family: var(--font-default);
+  border-left: 2px solid var(--color-primary);
+  margin: 40px 0;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+  .hero h2 {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .hero .btn-get-started,
+  .hero .btn-watch-video {
+    font-size: 13px;
+  }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  font-size: 14px;
+}
+
+.footer .footer-content {
+  background-color: white;
+  background-size: contain;
+  padding: 60px 0 30px 0;
+}
+
+.footer .footer-content .footer-info {
+  margin-bottom: 30px;
+}
+
+
+.footer .footer-content .footer-info .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: black;
+  font-family: var(--font-secondary);
+  margin-top: 3px;
+}
+
+
+.footer .footer-content .social-links a {
+  font-size: 14px;
+  line-height: 0;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.footer .footer-content .social-links a:hover {
+  background-color:#56b8e6;
+}
+
+.footer .footer-content .social-links a{
+	  background-color:black;
+}
+
+.footer .footer-content h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+
+
+.footer .footer-content .footer-contact p {
+  line-height: 26px;
+  color: var(--color-secondary);
+}
+
+.footer .footer-legal {
+  background: #fff;
+  padding: 16px 0;
+  background-color:lightgrey
+}
+
+
+
+.footer .footer-legal .credits {
+  padding-top: 4px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-secondary);
+}
+
+/* weather */
+
+.weather{
+	height:300px;
+	color:white;
+	font-size:15px;
+}
+
+.no-conn{
+	color:red;
+}
+
+.button{
+font-family:sans-serif;
+font-size:px;
+width:70px;
+height:30px;
+padding:3px;
+background-color:white;
+border-style:none;
+border-radius:20px;
+margin:15px 0px 0px 0px;
+font-weight:510;
+}
+
+.button:hover {
+  background-color:#56b8e1;
+  color:white;
+    transition: 0.3s;
+}
+
+#cityInput{
+	height:30px;
+background-color:white;
+border-style:none;
+border-color:black;
+border-radius:20px;
+padding:5px 10px ;
+}
+
+
+
+.enci{
+	font-size:15px;
+	font-weight:600;
+	margin:25px 0px 15px 0px;
+}
+
+.errorinfo{
+	font-size:15px;
+	width:300px;
+}
+
+.wait{
+	font-size:15px;
+}
+
+.no_city_enter{
+	font-size:15px;
+}
+
+.con{
+	font-weight:550;
+}
+
+#weatherResult{
+	font-size:17px;
+}
